@@ -1,10 +1,12 @@
 # Medibax-model
 This is the model that predicts diseases
 
-## Virtual Enviroment
+## Create Virtual Enviroment
 ```
 python -m venv .venv
 ```
+## Create Virtual Enviroment
+#### Linux & Mac
 ```
 source .venv/bin/activate
 ```
