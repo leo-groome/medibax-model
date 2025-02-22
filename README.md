@@ -5,12 +5,12 @@ This is the model that predicts diseases
 ```
 python -m venv .venv
 ```
-## Create Virtual Enviroment
+### Activate Virtual Enviroment
 #### Linux & Mac
 ```
 source .venv/bin/activate
 ```
-#### Windows
+##### Windows
 ```
 .venv\Scripts\activate
 ```
