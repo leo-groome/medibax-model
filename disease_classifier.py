@@ -81,7 +81,7 @@ class DiseaseClassifier(nn.Module):
             return self.softmax(x)
 
 # Step 4: Training function
-def train_model(model, train_loader, val_loader, criterion, optimizer, num_epochs=100):
+def train_model(model, train_loader, val_loader, criterion, optimizer, num_epochs=10000):
     # Lists to store metrics
     train_losses = []
     val_losses = []
@@ -293,9 +293,9 @@ if __name__ == "__main__":
     # Example: Make a prediction for a new patient
     # Create sample data (this would be replaced with real patient data)
     sample_patient = {
-        'age': 17, 'sex': 'F', 'fever': 0, 'sore_throat': 0, 'cough': 0, 
-        'headache': 0, 'fatigue': 0, 'body_ache': 0, 'runny_nose': 1, 
-        'congestion': 0, 'shortness_of_breath': 0, 'nausea': 1, 
+        'age': 25, 'sex': 'M', 'fever': 0, 'sore_throat': 0, 'cough': 1, 
+        'headache': 1, 'fatigue': 1, 'body_ache': 0, 'runny_nose': 0, 
+        'congestion': 0, 'shortness_of_breath': 0, 'nausea': 0, 
         'vomiting': 0, 'diarrhea': 0, 'chills': 0, 'rash': 0, 
         'chest_pain': 0, 'dizziness': 0, 'swollen_lymph_nodes': 0, 
         'loss_of_appetite': 0, 'joint_pain': 0, 'abdominal_pain': 0, 
@@ -304,7 +304,7 @@ if __name__ == "__main__":
         'difficulty_swallowing': 0, 'muscle_weakness': 0, 
         'night_sweats': 0, 'confusion': 0, 'rapid_breathing': 0, 
         'jaundice': 0, 'itching': 0, 'bruising': 0, 'blood_in_stool': 0, 
-        'weight_loss': 0, 'insomnia': 1, 'sweating': 0, 
+        'weight_loss': 0, 'insomnia': 0, 'sweating': 0, 
         'symptom_duration_days': 3
     }
     
